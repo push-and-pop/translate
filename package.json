@@ -1,0 +1,62 @@
+{
+  "name": "lt-translate",
+  "displayName": "lt_translate",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.5.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./src/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "lt-translate.translate",
+        "title": "Hello World"
+      }
+    ],
+    "configuration":{
+      "title": "lt-translate",
+      "type":"object",
+      "properties": {
+        "translate.baidu_appid":{
+          "type":"string",
+          "description": "your baidu appid"
+        },
+        "translate.baidu_appkey":{
+          "type":"string",
+          "description": "your baidu appkey"
+        }
+      }
+    }
+
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.73.0",
+    "@vscode/test-electron": "^2.2.0",
+    "eslint": "^8.26.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "blueimp-md5": "^2.19.0",
+    "crypto-js": "^4.1.1",
+    "querystring": "^0.2.1"
+  }
+  
+}
