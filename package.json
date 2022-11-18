@@ -3,8 +3,9 @@
   "displayName": "lt_translate",
   "description": "",
   "version": "0.0.1",
+  "publisher": "lt",
   "engines": {
-    "vscode": "^1.5.0"
+    "vscode": "^1.73.0"
   },
   "categories": [
     "Other"
